@@ -23,7 +23,7 @@ locals {
 }
 
 module "service_accounts" {
-  source                          = "github.com/cucxabong/terraform-modules?ref=main//gcp-iam-service-account"
+  source                          = "github.com/cucxabong/terraform-modules?ref=main//google-iam-service-account"
   project                         = local.project_id
   for_each                        = local.mapping
   gcp_service_account_name        = each.key

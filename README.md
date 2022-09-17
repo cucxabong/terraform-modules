@@ -5,4 +5,4 @@
 # Module Index
 
 - [Google Kubernetes Engine](./google-kubernetes-engine/)
-- [Google Cloud Service Account](./gcp-iam-service-account/)
+- [Google Cloud Service Account](./google-iam-service-account/)
