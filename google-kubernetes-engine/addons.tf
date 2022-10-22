@@ -59,7 +59,7 @@ resource "helm_release" "argocd" {
 }
 
 data "kubectl_file_documents" "csi_secrets_store_gcp_provider" {
-  content = data.http.csi_secrets_store_gcp_provider.body
+  content = data.http.csi_secrets_store_gcp_provider.response_body
 }
 
 data "http" "csi_secrets_store_gcp_provider" {
