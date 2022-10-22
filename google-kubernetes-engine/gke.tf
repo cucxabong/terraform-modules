@@ -1,11 +1,12 @@
 
 resource "google_container_cluster" "this" {
-  name               = var.cluster_name
-  location           = local.location
-  node_locations     = local.node_locations
-  initial_node_count = var.initial_node_count
-  network            = google_compute_network.this.name
-  subnetwork         = google_compute_subnetwork.nodes.name
+  name                    = var.cluster_name
+  location                = local.location
+  node_locations          = local.node_locations
+  initial_node_count      = var.initial_node_count
+  network                 = google_compute_network.this.name
+  subnetwork              = google_compute_subnetwork.nodes.name
+  enable_kubernetes_alpha = var.enable_kubernetes_alpha
 
   datapath_provider = var.datapath_provider
 

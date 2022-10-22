@@ -2,6 +2,11 @@ variable "cluster_name" {
   type = string
 }
 
+variable "enable_kubernetes_alpha" {
+  type    = bool
+  default = false
+}
+
 variable "ip_range_nodes" {
   type    = string
   default = "10.0.0.0/20"
